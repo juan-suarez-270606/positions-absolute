@@ -30,7 +30,9 @@ header .encabezado{
     background-image: url(../images/banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
+   /*  position: relative; */
+   position: fixed;
+   z-index: 1;
 }
 
 .titulo{
@@ -54,6 +56,7 @@ nav a{
 
 main{
     min-height: 70vh;
+    padding: 404px 60px 40px 60px;
 }
 
 footer{
@@ -73,4 +76,50 @@ footer a{
 
 footer img{
     width: 2.5rem;
+}
+
+img{
+    width: 100%;
+}
+
+/* float left */
+
+.left img{
+    float: left;
+    width: 23.75rem;
+    padding: 0 30px;
+}
+
+.right img{
+    float:right;
+    width: 23.75rem;
+    padding: 0 30px;
+}
+
+.clean{
+    clear: both;
+}
+
+p{
+    text-align: justify;
+    line-height: 1.3125rem;
+    margin-bottom: 10px;
+}
+
+.top1{
+    padding-top: 5%;
+}
+
+.contenedor{
+    max-width: 650px;
+    width: 100%;
+    margin: 25px 0;
+    background-color: rgba(0, 0, 0, 0.06);
+}
+
+.contenedor .fondo{
+    background-image: url(../images/universidades.png);
+    background-size: 100%;
+    padding-top: 55%;
+    position: relative;
 }
